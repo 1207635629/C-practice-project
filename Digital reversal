@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int n,m;
+	while(scanf("%d",&n)!=EOF)
+	{
+		m=0;
+		while(n)
+		{
+			m=m*10+n%10;//m是位权相加得到的新的数 
+			n=n/10;//n/10再取余得到该轮最低位的数值 
+		}
+		printf("%d\n",m);
+	}
+	return 0;
+}
